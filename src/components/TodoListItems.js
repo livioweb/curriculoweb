@@ -15,9 +15,9 @@ export default class TodoListItems extends Component{
     render(){
         const {item} = this.props;
         return(
-           <li className="list-group-item">
-               <p><button className="btn btn-danger" type="button" onClick={this.onRemove} >x</button>
-               {item}</p>
+           <li className="list-group-item alert-warning">
+               <button className="btn btn-danger" type="button" onClick={this.onRemove} >x</button>
+               {item}
            </li>
         );
     }

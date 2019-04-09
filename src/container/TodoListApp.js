@@ -3,6 +3,8 @@ import TodoForm from '../components/TodoForm';
 import {TodoList} from '../components/TodoList';
 import 'bootstrap/dist/css/bootstrap.css'
 
+import {ContainerApp} from "../components/ContainerApp";
+
 export default class TodoListApp extends Component{
 
     constructor(props){
@@ -31,10 +33,14 @@ export default class TodoListApp extends Component{
     render(){
         const {items} = this.state;
         return(
-            <div id="app" className="container">
-                <TodoForm pushToItems={this.pushToItems} />
-                <TodoList items = {items} removeFromItems={this.removeFromItems} />
-            </div>
+            <ContainerApp>
+                <div className="col-12">
+                    <TodoForm pushToItems={this.pushToItems} />
+                </div>
+                <div className="col-12">
+                    <TodoList items = {items} removeFromItems={this.removeFromItems} />
+                </div>
+            </ContainerApp>
 
     );
     }
