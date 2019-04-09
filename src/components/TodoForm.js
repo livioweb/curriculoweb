@@ -31,8 +31,12 @@ export default class TodoForm extends Component{
         const {todo} = this.state;
         return(
             <div>
-                <input type="text" name="todo" value={todo} onChange={this.onChange} placeholder="Enter Todo here!" />
-                <button type="button" onClick={this.onAdd} > create </button>
+                <div className="form-group">
+                    <input type="text" className="form-control" name="todo" value={todo} onChange={this.onChange} placeholder="Enter Todo here!" />
+                </div>
+                <div className="form-group">
+                    <button type="button" className="btn btn-success" onClick={this.onAdd} > create </button>
+                </div>
             </div>
         );
     }

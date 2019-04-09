@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import TodoForm from '../components/TodoForm';
 import {TodoList} from '../components/TodoList';
-
+import 'bootstrap/dist/css/bootstrap.css'
 
 export default class TodoListApp extends Component{
 
@@ -31,7 +31,7 @@ export default class TodoListApp extends Component{
     render(){
         const {items} = this.state;
         return(
-            <div>
+            <div id="app" className="container">
                 <TodoForm pushToItems={this.pushToItems} />
                 <TodoList items = {items} removeFromItems={this.removeFromItems} />
             </div>

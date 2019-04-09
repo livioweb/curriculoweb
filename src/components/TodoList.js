@@ -23,7 +23,7 @@ import TodoListItems from './TodoListItems';
 export const TodoList = (props)=>{
     const{items,removeFromItems} = props;
     return(
-        <ul>
+        <ul className="list-group">
             {items.map((item, index)=>(
                 <TodoListItems key={index} index={index} item={item} removeFromItems = {removeFromItems}/>
             ))}
