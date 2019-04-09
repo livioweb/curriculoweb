@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 //import Button from 'react-bootstrap/Button'
 
 import Teste from './components/Teste'
+import Todolist from './components/Todolist'
 
 //import logo from './logo.svg';
 import './App.css';
@@ -17,7 +18,14 @@ class App extends Component {
 
   render() {
     return (
-        <Teste />
+        <div >
+
+          <Teste />
+          <Todolist />
+
+        </div>
+
+
 
     );
   }
