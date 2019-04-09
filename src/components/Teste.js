@@ -24,7 +24,7 @@ class Teste extends Component {
 
                 <h1>react->bootstrap</h1>
                 <p>Este é um exemplo do Componente Jumbotron construído com o React-Boostrap!</p>
-                <p><Button bsStyle="danger" onClick={this.handleClick} >Aprenda mais!</Button></p>
+                <p><Button bsstyle="danger" onClick={this.handleClick} >Aprenda mais!</Button></p>
 
             </Jumbotron>
         );

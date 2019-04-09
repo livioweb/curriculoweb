@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import TodoForm from './TodoForm'
 
 export default class Todolist extends Component{
 
@@ -29,8 +30,10 @@ export default class Todolist extends Component{
 
         return(
             <div>
-                <input type="text" name="todo" onChange={this.onChange} placehosder="Entes Todo" />
-                <button type="button" onClick={this.pushTodoItens} > create </button>
+
+                <TodoForm />
+
+
                 <hr/>
                 <ul>
                     {items.map((item,index)=>(
